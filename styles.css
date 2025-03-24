@@ -1,10 +1,10 @@
 body {
-    /* overflow-x: hidden; */
+    letter-spacing: 1px;
 }
 
 .container {
     padding: 20px;
-    background-color: beige;
+    background-color: #F4D738;
     height: 100svh;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -15,24 +15,48 @@ body {
 }
 
 .notification-container {
-    background-color: lightseagreen;
+    background-color: #FF4911;
     height: 80px;
     min-width: 250px;
     position: fixed;
     margin-top: 20px;
     margin-right: 10px;
-    padding: 10px;
+    padding-inline: 10px;
     /* inset: 0; */
     top: 0;
     right: 0;
     translate: 120%;
     visibility: hidden;
 
+    border-radius: 20px;
+
     transition: all;
     transition-duration: 500ms;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
 }
 
 .notification-container.show {
     visibility: initial;
     translate: 0%;
+}
+
+.neobrutalism-shadow {
+    border-style: solid;
+    border-width: 4px 6px 6px 4px;
+    border-radius: 20px;
+}
+
+button.button-trigger-notif {
+    background-color: #7DF9FF;
+    padding: 5px;
+
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+
+    z-index: 8999999999999999999;
 }

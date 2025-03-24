@@ -7,9 +7,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <span>Test container</span>
-        <button onclick="onShowNotification()">Test Notif</button>
+    <div class="container neobrutalism-shadow">
+        <h2>Test container</h2>
+        <div style="position: relative;">
+            <button class="neobrutalism-shadow"
+                style="
+                    width: 100px;
+                    height: 40px;
+                    position: absolute;
+                    left: 0;
+                    z-index: 2;
+                    transform: translate(5px, 5px);
+                "
+            ></button>
+            <button class="button-trigger-notif neobrutalism-shadow" onclick="onShowNotification()">Test Notif</button>
+        </div>
     </div>
 
     <div class="notification-section">
