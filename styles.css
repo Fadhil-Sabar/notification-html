@@ -58,5 +58,5 @@ button.button-trigger-notif {
     width: 100px;
     height: 40px;
 
-    z-index: 8999999999999999999;
+    font-weight: bold;
 }

@@ -1,19 +1,12 @@
 const notifSection = document.getElementsByClassName('notification-section')
-let globalNotifShow = [], showNotif = false
 
 const onShowNotification = () => {
-    // showNotif = !showNotif
-    // if(showNotif){
-    //     notifSection[0].classList.add('show')
-    // }else{
-    //     notifSection[0].classList.remove('show')
-    // }
 
     changePosition()
 
     const elementNotif = document.createElement('div')
     elementNotif.className = 'notification-container neobrutalism-shadow'
-    const notifText = document.createElement('h5')
+    const notifText = document.createElement('h4')
     notifText.textContent = 'Heading Notification'
     elementNotif.appendChild(notifText)
     
@@ -36,8 +29,6 @@ const changePosition = () => {
     const allNotif = document.querySelectorAll('.notification-container')
 
     allNotif.forEach((el, idx) => {
-        console.log(el)
         el.setAttribute("style", `transform: translate(0%, ${120 * (idx + 1)}%)`)
     })
-    console.log("🚀 ~ changePosition ~ allNotif:", allNotif)
 }
