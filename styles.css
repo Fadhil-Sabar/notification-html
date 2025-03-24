@@ -1,0 +1,38 @@
+body {
+    /* overflow-x: hidden; */
+}
+
+.container {
+    padding: 20px;
+    background-color: beige;
+    height: 100svh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-container {
+    background-color: lightseagreen;
+    height: 80px;
+    min-width: 250px;
+    position: fixed;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px;
+    /* inset: 0; */
+    top: 0;
+    right: 0;
+    translate: 120%;
+    visibility: hidden;
+
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.notification-container.show {
+    visibility: initial;
+    translate: 0%;
+}
